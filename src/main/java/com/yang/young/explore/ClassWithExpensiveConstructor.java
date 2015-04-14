@@ -4,6 +4,7 @@ public class ClassWithExpensiveConstructor {
 	
 	private final int value;
 	
+	
 	private ClassWithExpensiveConstructor() {
 		value = doExpensiveLookup();
 	}
