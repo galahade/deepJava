@@ -61,6 +61,18 @@ public class ClassWithExpensiveConstructorTest {
 		Assert.assertEquals(0xffffff00, UnSafeUtil.getUnsafeByConstructor().getInt(address));
 		Assert.assertEquals(0x000000ff, UnSafeUtil.getUnsafeByConstructor().getInt(address + 4));
 	}
+	
+	@Test
+	public void testObjectSize() {
+		long size = UnSafeUtil.sizeOf(Object.class);
+		System.out.println("Object size is :" + size);
+		Object o = new Object() {
+			private byte a;
+			//private long b;
+		};
+		size = UnSafeUtil.sizeOf(o.getClass());
+		System.out.println("Inner Object size is :" + size);
+	}
 
 
 }
