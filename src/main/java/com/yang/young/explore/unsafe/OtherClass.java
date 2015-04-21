@@ -1,4 +1,4 @@
-package com.yang.young.explore;
+package com.yang.young.explore.unsafe;
 
 @SuppressWarnings("unused")
 public class OtherClass {

@@ -1,4 +1,4 @@
-package com.yang.young.explore;
+package com.yang.young.explore.unsafe;
 
 public class ClassWithExpensiveConstructor {
 	

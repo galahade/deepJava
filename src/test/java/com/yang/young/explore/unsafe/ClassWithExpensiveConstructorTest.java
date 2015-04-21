@@ -1,9 +1,14 @@
-package com.yang.young.explore;
+package com.yang.young.explore.unsafe;
 
 import java.lang.reflect.Constructor;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.yang.young.explore.unsafe.ClassWithExpensiveConstructor;
+import com.yang.young.explore.unsafe.DirectIntArray;
+import com.yang.young.explore.unsafe.OtherClass;
+import com.yang.young.explore.unsafe.UnSafeUtil;
 
 import sun.reflect.ReflectionFactory;
 
